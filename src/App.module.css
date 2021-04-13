@@ -1,0 +1,78 @@
+.appContent {
+  max-width: 90%;
+  min-height: 100vh;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+  "w h"
+  "s m"
+  "p f";
+  grid-template-rows: 70px auto 60px;
+  grid-template-columns: 20% 80%;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.main {
+  max-height: min-content;
+  justify-self: center;
+  position: relative;
+  width: 80%;
+  grid-area: m;
+  padding: 1rem 5rem 0 0;
+}
+
+button {
+  opacity: 0.8;
+}
+
+input, select, option, textarea {
+  opacity: 0.8;
+  color: black;
+}
+
+::selection {
+  background: rgba(105, 105, 105, 0.3);
+}
+
+::-moz-selection {
+  background: rgba(105, 105, 105, 0.3);
+}
+
+@media (max-width: 1200px) {
+  .appContent {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 880px) {
+  .appContent {
+    height: min-content;
+    display: grid;
+    grid-template-areas:
+  "h"
+  "s"
+  "m"
+  "f";
+    grid-template-rows: 70px 60px auto 60px;
+    grid-template-columns: 100%;
+  }
+  .main {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+@media (max-height: 426px) and (max-width: 880px) {
+  .appContent {
+    grid-template-rows: 70px 40px auto 60px;
+  }
+}
+
+@media (max-height: 525px) and (min-width: 880px) {
+  .main {
+    padding-top: 1rem;
+  }
+}

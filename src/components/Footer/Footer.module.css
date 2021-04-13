@@ -1,0 +1,49 @@
+.footer {
+    position: relative;
+    width: 100%;
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Cutive', serif;
+    padding-right: 5rem;
+}
+
+.flaticonRef {
+    font-size: xx-small;
+}
+
+.flaticonRef a {
+    color: #595959;
+}
+
+@media (max-width: 880px) {
+    .footer {
+        padding: 0;
+    }
+}
+
+@media (max-width: 745px) {
+    .footer {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 710px) {
+    .footer {
+        padding-right: 0.4rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .footer {
+        font-size: small;
+        padding: 0;
+    }
+    .flaticonRef {
+        text-align: center;
+    }
+}

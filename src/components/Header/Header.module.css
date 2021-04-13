@@ -1,0 +1,120 @@
+.headerContainer {
+    width: 85%;
+    grid-area: h;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.siteInfo {
+    height: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.siteInfo .logo {
+    height: 20px;
+    width: 20px;
+}
+
+.siteInfo .networkName {
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Cutive', serif;
+}
+
+.loginInfo{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.loginInfo .loginContainer .login {
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+
+.loginInfo button {
+    margin-left: 1rem;
+}
+
+.loginInfo .loginContainer a, .loginInfo .loginContainer div {
+    color: #002766;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+@media (max-width: 1080px) {
+    .siteInfo {
+        width: 400px;
+    }
+
+    .siteInfo .networkName {
+        font-size: x-large;
+    }
+
+    .siteInfo .logo {
+        height: 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .siteInfo {
+        width: 300px;
+    }
+
+    .siteInfo .networkName {
+        font-size: large;
+    }
+
+    .siteInfo .logo {
+        height: 20px;
+    }
+}
+
+@media (max-width: 880px) {
+    .headerContainer {
+        width: 100%;
+    }
+
+    .loginInfo .loginContainer {
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 745px) {
+    .siteInfo {
+        width: 300px;
+    }
+
+    .loginInfo .loginContainer .login {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 500px) {
+    .headerContainer {
+        justify-content: center;
+    }
+
+    .siteInfo {
+        width: max-content;
+        padding-right: 0.5rem;
+    }
+
+    .siteInfo .networkName {
+        display: none;
+    }
+
+    .loginInfo .loginContainer {
+        padding: 0;
+    }
+}

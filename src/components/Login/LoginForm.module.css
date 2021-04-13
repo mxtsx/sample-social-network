@@ -1,0 +1,12 @@
+.loginFormContainer {
+    height: 30%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginFormContainer input, .loginFormContainer button {
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,31 @@
+.controlsContainer {
+    padding: 1rem;
+}
+
+.error input,
+.error textarea {
+    border: solid 1px red;
+}
+
+.errorContainer {
+    text-align: center;
+}
+
+.error span {
+    color: red;
+    font-size: small;
+}
+
+.formSummaryError {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    width: 10rem;
+    border: solid 1px red;
+    padding: 0.25rem;
+    color: red
+}
+
+.formText {
+    padding-right: 0.5rem;
+}

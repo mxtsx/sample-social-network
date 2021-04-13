@@ -1,0 +1,28 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 0.25rem;
+}
+
+.container .profilePhoto {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    padding-top: 0.25rem;
+}
+
+.container button {
+    margin-top: 0.5rem;
+    font-size: small;
+}
+
+@media (max-height: 574px) {
+    .container .profilePhoto {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+}
