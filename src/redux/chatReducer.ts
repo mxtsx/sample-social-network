@@ -2,7 +2,7 @@ import {BaseThunkType, InferActionsTypes} from "./reduxStore";
 import {chatAPI, MessageAPIType, StatusAPIType} from "../api/chatApi";
 import {Dispatch} from "redux";
 import {v4} from 'uuid';
-import {arraysAreEqual} from "../utils/stateIsGreater";
+import {arraysAreEqual} from "../utils/arraysAreEqual";
 
 const CHAT_MESSAGES_RECEIVED = 'chat/CHAT_MESSAGES_RECEIVED'
 const SET_STATUS = 'chat/SET_STATUS'
