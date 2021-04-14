@@ -20,7 +20,7 @@
     color: #595959;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1000px) {
     .footer {
         padding: 0;
     }

@@ -4,4 +4,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10vh;
+}
+
+@media (max-width: 1000px) and (min-height: 515px) {
+    .profileContainer {
+        padding-top: 0;
+    }
 }

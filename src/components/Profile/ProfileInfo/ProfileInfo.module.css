@@ -12,7 +12,7 @@
     position: relative;
     height: max-content;
     grid-area: ph;
-    padding-top: 1rem;
+    padding-top: 0.15rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -25,22 +25,19 @@
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    /*Using a background color, but you can use a background image to represent a button*/
     background-image: url("upload-image.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.photo .inputWrapper input[type=file]{
+.photo .inputWrapper input[type=file] {
     cursor: pointer;
     height: 100%;
     position:absolute;
     top: 0;
     right: 0;
     z-index: 99;
-    /*This makes the button huge. If you want a bigger button, increase the font size*/
     font-size:50px;
-    /*Opacity settings for all browsers*/
     opacity: 0;
     -moz-opacity: 0;
     filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0)
@@ -55,7 +52,7 @@
 
 .description {
     height: max-content;
-    width: min-content;
+    width: max-content;
     grid-area: d;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.6);
@@ -127,14 +124,23 @@
     font-weight: bold;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1000px) {
     .profileInfoContainer {
         height: max-content;
     }
 
+    .profileInfoContainer .photo {
+        height: 100%;
+        flex-direction: column-reverse;
+        padding-top: 0;
+    }
+
     .profileInfoContainer .photo img {
-        width: 150px;
-        height: 150px;
+        padding-top: 0.15rem;
+    }
+
+    .profileInfoContainer .description {
+        margin-top: 0.3rem;
     }
 }
 
@@ -153,10 +159,10 @@
         margin: 0 0 0.25rem;
     }
 
-    .profileInfoContainer .photo {
-        height: 100%;
-        flex-direction: column-reverse;
+    .profileInfoContainer .photo img {
         padding-top: 0;
+        width: 150px;
+        height: 150px;
     }
 
     .profileInfoContainer .photo .buttonUnderProfilePhoto {
@@ -164,6 +170,8 @@
     }
 
     .profileInfoContainer .description {
+        margin-top: 0;
+        width: min-content;
         justify-self: center;
         font-size: small;
     }

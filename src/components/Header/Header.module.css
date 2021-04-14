@@ -80,7 +80,7 @@
     }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1000px) {
     .headerContainer {
         width: 100%;
     }

@@ -45,7 +45,7 @@ input, select, option, textarea {
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1000px) {
   .appContent {
     height: min-content;
     display: grid;

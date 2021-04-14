@@ -1,10 +1,11 @@
 import axios from "axios";
+const API_KEY = process.env.API_KEY
 
 export const instance = axios.create({
     baseURL: "https://social-network.samuraijs.com/api/1.0/",
     withCredentials: true,
     headers: {
-        "API-KEY": "340904a1-1685-4669-8949-4f4936211077"
+        "API-KEY": API_KEY
     }
 })
 
