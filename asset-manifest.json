@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/sample-social-network/static/css/main.0781fc56.chunk.css",
+    "main.js": "/sample-social-network/static/js/main.c32b25fe.chunk.js",
+    "main.js.map": "/sample-social-network/static/js/main.c32b25fe.chunk.js.map",
+    "runtime-main.js": "/sample-social-network/static/js/runtime-main.02d44bb6.js",
+    "runtime-main.js.map": "/sample-social-network/static/js/runtime-main.02d44bb6.js.map",
+    "static/css/2.01e73eb3.chunk.css": "/sample-social-network/static/css/2.01e73eb3.chunk.css",
+    "static/js/2.00452ef3.chunk.js": "/sample-social-network/static/js/2.00452ef3.chunk.js",
+    "static/js/2.00452ef3.chunk.js.map": "/sample-social-network/static/js/2.00452ef3.chunk.js.map",
+    "static/js/3.673e5bfd.chunk.js": "/sample-social-network/static/js/3.673e5bfd.chunk.js",
+    "static/js/3.673e5bfd.chunk.js.map": "/sample-social-network/static/js/3.673e5bfd.chunk.js.map",
+    "index.html": "/sample-social-network/index.html",
+    "static/css/2.01e73eb3.chunk.css.map": "/sample-social-network/static/css/2.01e73eb3.chunk.css.map",
+    "static/css/main.0781fc56.chunk.css.map": "/sample-social-network/static/css/main.0781fc56.chunk.css.map",
+    "static/js/2.00452ef3.chunk.js.LICENSE.txt": "/sample-social-network/static/js/2.00452ef3.chunk.js.LICENSE.txt",
+    "static/media/avatarMan.0940a2e8.svg": "/sample-social-network/static/media/avatarMan.0940a2e8.svg",
+    "static/media/avatarWoman.98c0bda7.svg": "/sample-social-network/static/media/avatarWoman.98c0bda7.svg",
+    "static/media/buttonDoubleLeft.6471537b.svg": "/sample-social-network/static/media/buttonDoubleLeft.6471537b.svg",
+    "static/media/buttonDoubleRight.5ea00a17.svg": "/sample-social-network/static/media/buttonDoubleRight.5ea00a17.svg",
+    "static/media/buttonLeft.e43ebb0d.svg": "/sample-social-network/static/media/buttonLeft.e43ebb0d.svg",
+    "static/media/buttonRight.7d765ffd.svg": "/sample-social-network/static/media/buttonRight.7d765ffd.svg",
+    "static/media/logo.b47f6e0a.svg": "/sample-social-network/static/media/logo.b47f6e0a.svg",
+    "static/media/preloader.fa017795.svg": "/sample-social-network/static/media/preloader.fa017795.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.02d44bb6.js",
+    "static/css/2.01e73eb3.chunk.css",
+    "static/js/2.00452ef3.chunk.js",
+    "static/css/main.0781fc56.chunk.css",
+    "static/js/main.c32b25fe.chunk.js"
+  ]
+}
