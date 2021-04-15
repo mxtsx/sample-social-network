@@ -1,5 +1,6 @@
 body {
   min-height: 100vh;
+  width: 100vh;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -24,5 +25,11 @@ code {
 @media (min-height: 100vh) {
   html, body {
     height: min-content !important;
+  }
+}
+
+@media (min-width: 100vw) {
+  html, body {
+    min-width: min-content !important;
   }
 }

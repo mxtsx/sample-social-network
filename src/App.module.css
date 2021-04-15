@@ -1,6 +1,7 @@
 .appContent {
-  max-width: 90%;
+  width: 90%;
   min-height: 100vh;
+  height: max-content;
   margin: auto;
   display: grid;
   grid-template-areas:
@@ -41,7 +42,8 @@ input, select, option, textarea {
 
 @media (max-width: 1200px) {
   .appContent {
-    max-width: 100%;
+    min-width: 100%;
+    width: min-content;
   }
 }
 

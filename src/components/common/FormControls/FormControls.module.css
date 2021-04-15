@@ -17,8 +17,7 @@
 }
 
 .formSummaryError {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     height: max-content;
     width: max-content;
     padding: 0.25rem;
