@@ -107,10 +107,10 @@
 
     .siteInfo {
         width: max-content;
-        padding-right: 0.5rem;
     }
 
     .siteInfo .networkName {
+        padding-left: 0.5rem;
         display: none;
     }
 

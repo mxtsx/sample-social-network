@@ -48,6 +48,9 @@ export const userAuthentication = (): AuthReducerThunkTypes => {
         if(response.data.resultCode === 0) {
             const {email, id, login} = response.data.data
             dispatch(actions.userAuth(id, email, login, true))
+        } else {
+            const message = response.data.messages[0] ? response.data.messages[0] : "Something goes wrong :("
+            dispatch(stopSubmit("login", {_error: message}))
         }
     }
 }
@@ -56,9 +59,9 @@ export const userLogin = (email: string, password: string, rememberMe: boolean, 
     return async (dispatch) => {
         const response = await authAPI.login(email, password, rememberMe, captcha)
         if(response.data.resultCode === 0) {
-            dispatch(userAuthentication())
+            await dispatch(userAuthentication())
         } else if(response.data.resultCode === 10) {
-            dispatch(setCaptchaUrl())
+            await dispatch(setCaptchaUrl())
         } else {
             const message = response.data.messages[0] ? response.data.messages[0] : "Something goes wrong :("
             dispatch(stopSubmit("login", {_error: message}))

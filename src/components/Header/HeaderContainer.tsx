@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
-import {userLogout, userAuthentication} from "../../redux/authReducer";
+import {userAuthentication, userLogout} from "../../redux/authReducer";
 import Header from "./Header";
 import {AppStateType} from "../../redux/reduxStore";
-import {getAuth, getEmail, getLogin} from "../../redux/authSelectors";
+import {getAuth, getLogin} from "../../redux/authSelectors";
 
 type PropsType = MapStateToPropsType & MapDispatchToPropsType & OwnPropsType
 
