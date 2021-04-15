@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import u from "./Users.module.css"
 import {Field, Form, Formik} from 'formik';
 import {useSelector} from "react-redux";
@@ -29,7 +29,6 @@ const UsersSearchForm: React.FC<PropsType> = React.memo(({onFilterChanged}) => {
             friend: values.friend === "null" ? null : values.friend === "true" ? true : false
         }
         onFilterChanged(filter)
-        setSubmitting(false)
     }
     const resetValues = () => {
         const filter: FilterType = {

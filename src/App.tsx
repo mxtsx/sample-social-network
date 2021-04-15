@@ -30,7 +30,7 @@ class App extends PureComponent<PropsType> {
     catchAllUnhandledErrors = (promiseRejectionEvent: PromiseRejectionEvent) => {
         if(promiseRejectionEvent) {
             console.error(promiseRejectionEvent)
-            const error = promiseRejectionEvent.reason.response.data.message
+            const error = promiseRejectionEvent.reason.message || promiseRejectionEvent.reason.response.data.message
             this.props.setError(error)
         }
     }
