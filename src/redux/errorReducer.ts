@@ -1,4 +1,3 @@
-import {userAuthentication} from "./authReducer";
 import {BaseThunkType, InferActionsTypes} from "./reduxStore";
 
 const SET_ERROR = 'error/SET_ERROR'
@@ -25,7 +24,6 @@ export const actions = {
 
 export const setError = (error: string | null): ErrorReducerThunkType => {
     return async (dispatch) => {
-        await dispatch(userAuthentication())
         dispatch(actions.errorSet(error))
     }
 }
