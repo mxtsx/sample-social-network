@@ -24,12 +24,12 @@ code {
 
 @media (min-height: 100vh) {
   html, body {
-    height: min-content !important;
+    height: max-content !important;
   }
 }
 
 @media (min-width: 100vw) {
   html, body {
-    width: min-content !important;
+    width: max-content !important;
   }
 }
