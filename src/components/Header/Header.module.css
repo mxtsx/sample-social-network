@@ -85,8 +85,8 @@
         width: 100%;
     }
 
-    .loginInfo .loginContainer {
-        padding-right: 1rem;
+   .loginInfo .loginContainer {
+         padding-right: 1rem;
     }
 }
 
@@ -115,6 +115,6 @@
     }
 
     .loginInfo .loginContainer {
-        padding: 0;
+        padding-left: 1rem;
     }
 }
