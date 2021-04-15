@@ -14,7 +14,7 @@
 }
 
 .main {
-  max-height: min-content;
+  min-height: min-content;
   justify-self: center;
   position: relative;
   width: 80%;
