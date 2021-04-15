@@ -53,12 +53,13 @@ const UsersSearchForm: React.FC<PropsType> = React.memo(({onFilterChanged}) => {
                                 <option value="true">Only followed</option>
                                 <option value="false">Only unfollowed</option>
                             </Field>
+                                <span className={isSearch ? u.searchButtonsInRow : ""}>
                                 <Button className={u.button} type="default" htmlType={"submit"} icon={<SearchOutlined/>} disabled={isSubmitting} shape={isSearch ? 'circle' : 'round'}>
                                     {!isSearch && "Search"}
                                 </Button>
                             {isSearch &&
                                 <Button className={u.button} type="default" onClick={resetValues} htmlType={"submit"} icon={<CloseSquareOutlined/>}  shape={"circle"}/>
-                            }
+                            }   </span>
                         </Form>
                     );
                 }}
