@@ -10,6 +10,7 @@
 }
 
 .allMessages {
+    position: relative;
     max-height: 45vh;
     max-width: 800px;
     overflow-y: auto;

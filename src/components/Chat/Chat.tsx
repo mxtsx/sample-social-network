@@ -58,7 +58,7 @@ const AllMessages = React.memo(() => {
 
     return(
         <div className={c.allMessages} onScroll={scrollHandler}>
-            {!messages.length && <Preloader />}
+            {!messages.length && <Preloader maxWidth={"50%"} maxHeight={"50%"} />}
             {messages.map((m: MessageChatType) => <ChatMessage message={m} key={m.id} />)}
             <div ref={messagesEndRef} />
         </div>
