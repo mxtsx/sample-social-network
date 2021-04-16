@@ -15,16 +15,18 @@ const initialState = {
 const chatReducer = (state = initialState, action: ActionTypes): ChatReducerInitialStateType => {
     switch(action.type) {
         case CHAT_MESSAGES_RECEIVED:
-            if(!state.messages[state.messages.length - 1] && ((!arraysAreEqual(state.messages, action.payload.messages) || (action.payload.messages.length <= 3)))
-                || ((action.payload.messages.length === 1) && state.messages[state.messages.length - 1])){
+            if((!state.messages[state.messages.length - 1] && (!arraysAreEqual(state.messages, action.payload.messages) || (action.payload.messages.length <= 3)))
+                || (state.messages[state.messages.length - 1] && (action.payload.messages.length === 1))){
                 return {
                     ...state,
                     messages: [...state.messages, ...action.payload.messages.map(m => ({...m, id: v4()}))]
                         .filter((m, index, array) => index >= array.length - 100)
                 }
-            } else if ((state.messages[state.messages.length - 1]
-                && (!arraysAreEqual(state.messages, action.payload.messages)
-                && (state.messages[state.messages.length - 1].message !== action.payload.messages[state.messages.length].message)))) {
+            }
+            if ((state.messages[state.messages.length - 1]
+                && (!arraysAreEqual(state.messages, action.payload.messages)))
+                || ((state.messages.length === 100 && action.payload.messages.length === 101)
+                        && (state.messages[state.messages.length - 1].message !== action.payload.messages[state.messages.length].message))) {
                                 return {
                                     ...state,
                                     messages: [...state.messages, ...action.payload.messages.slice(state.messages.length - 1).map(m => ({...m, id: v4()}))]
