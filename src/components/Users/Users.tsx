@@ -68,7 +68,7 @@ const Users: React.FC<PropsType> = React.memo(() => {
     const totalPagesCount = Math.ceil(totalUsersCount/pageSize)
     return(
         <div className={u.container}>
-            <div className={u.usersList}>
+            <div className={u.usersWrapper}>
                 <div className={u.searchFormAndPage}>
                     <UsersSearchForm onFilterChanged={onFilterChanged}/>
                     <div className={u.currentPage}><span><strong>Page {currentPage}</strong></span></div>
@@ -83,7 +83,7 @@ const Users: React.FC<PropsType> = React.memo(() => {
                     <div className={u.buttonContainer}>
                     </div>
                 }
-                <span className={u.users}>
+                <span className={u.usersList}>
                 {users.length ?
                     users.map(u => <User key={u.id} user={u}/>)
                     : <div>No users found :(</div>

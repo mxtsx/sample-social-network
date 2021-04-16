@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.usersList {
+.usersWrapper {
     height: 100%;
     width: 100%;
     display: flex;
@@ -41,7 +41,7 @@
     justify-content: space-between;
 }
 
-.users {
+.usersList {
     height: 100%;
     width: max-content;
     display: flex;
