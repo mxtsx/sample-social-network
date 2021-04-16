@@ -29,7 +29,7 @@ const chatReducer = (state = initialState, action: ActionTypes): ChatReducerInit
                         && (state.messages[state.messages.length - 1].message !== action.payload.messages[state.messages.length].message))) {
                                 return {
                                     ...state,
-                                    messages: [...state.messages, ...action.payload.messages.slice(state.messages.length - 1).map(m => ({...m, id: v4()}))]
+                                    messages: [...state.messages, ...action.payload.messages.slice(state.messages.length).map(m => ({...m, id: v4()}))]
                                 }
                             }
             return {...state, messages: state.messages}
