@@ -88,7 +88,8 @@ const AddMessageForm = React.memo(() => {
     const onChangeHandler = (e: ChangeEvent<HTMLTextAreaElement>) => {
         if(e.currentTarget.value === '\n') {
             return
-        } else if (e.currentTarget.value === ' ') {
+        }
+        if (e.currentTarget.value === ' ') {
             return
         }
         setMessage(e.currentTarget.value)
