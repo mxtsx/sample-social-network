@@ -1,5 +1,5 @@
 .container, .buttonContainer {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -7,20 +7,51 @@
     justify-content: space-between;
 }
 
-.usersList {
-    height: 100%;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .buttonContainer {
+    height: 95%;
     width: 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.usersList {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.searchFormAndPage {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.usersListAndButtons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.users {
+    height: 100%;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.notAllUsers {
+    height: 90%;
+    width: 100%;
 }
 
 .arrowButton, .arrowButton:hover {

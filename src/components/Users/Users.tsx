@@ -68,31 +68,42 @@ const Users: React.FC<PropsType> = React.memo(() => {
     const totalPagesCount = Math.ceil(totalUsersCount/pageSize)
     return(
         <div className={u.container}>
-            { currentPage > 1 ?
-                <div className={u.buttonContainer}>
-                    <img src={buttonDoubleLeft} alt="" className={u.arrowButton} onClick={() => getCurrentUsers(currentPage/currentPage)}/>
-                    <img src={buttonLeft} alt="" className={u.arrowButton} onClick={() => getCurrentUsers(currentPage - 1)}/>
-                </div>
-                :
-                <div className={u.buttonContainer}>
-                </div>
-            }
             <div className={u.usersList}>
-                <UsersSearchForm onFilterChanged={onFilterChanged} />
-                <div className={u.currentPage}><span><strong>Page {currentPage}</strong></span></div>
-                {
-                    users.map(u => <User key={u.id} user={u}/>)
+                <div className={u.searchFormAndPage}>
+                    <UsersSearchForm onFilterChanged={onFilterChanged}/>
+                    <div className={u.currentPage}><span><strong>Page {currentPage}</strong></span></div>
+                </div>
+                <div className={u.usersListAndButtons}>
+                {currentPage > 1 ?
+                    <div className={u.buttonContainer}>
+                        <img src={buttonDoubleLeft} alt="" className={u.arrowButton} onClick={() => getCurrentUsers(currentPage/currentPage)}/>
+                        <img src={buttonLeft} alt="" className={u.arrowButton} onClick={() => getCurrentUsers(currentPage - 1)}/>
+                    </div>
+                    :
+                    <div className={u.buttonContainer}>
+                    </div>
                 }
+                <span className={u.users}>
+                {users.length ?
+                    users.map(u => <User key={u.id} user={u}/>)
+                    : <div>No users found :(</div>
+                }
+                    {users.length < pageSize &&
+                    <div className={u.notAllUsers} />}
+                </span>
+                {!!users.length && currentPage !== totalPagesCount ?
+                    <div className={u.buttonContainer}>
+                        <img src={buttonRight} alt="" className={u.arrowButton}
+                             onClick={() => getCurrentUsers(currentPage + 1)}/>
+                        <img src={buttonDoubleRight} alt="" className={u.arrowButton}
+                             onClick={() => getCurrentUsers(totalPagesCount)}/>
+                    </div>
+                    :
+                    <div className={u.buttonContainer}>
+                    </div>
+                }
+                </div>
             </div>
-            { currentPage !== totalPagesCount ?
-                <div className={u.buttonContainer}>
-                    <img src={buttonRight} alt="" className={u.arrowButton} onClick={() => getCurrentUsers(currentPage + 1)}/>
-                    <img src={buttonDoubleRight} alt="" className={u.arrowButton} onClick={() => getCurrentUsers(totalPagesCount)}/>
-                </div>
-                :
-                <div className={u.buttonContainer}>
-                </div>
-            }
         </div>
     )
 })
