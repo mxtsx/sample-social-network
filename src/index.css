@@ -42,7 +42,7 @@ code {
     width: 100%;
     z-index: -10;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("https://source.unsplash.com/collection/3302492/1600x900");
+    url("https://source.unsplash.com/collection/3302492/1000x550");
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(0.3rem);
