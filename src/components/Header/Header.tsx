@@ -27,6 +27,7 @@ const Header: React.FC<PropsType> = React.memo(({login, auth, userLogout}) => {
                     </span>
                 </div>
             </div>
+            {currentPagePath !== "/login" &&
             <div className={h.loginInfo}>
                 <div className={h.loginContainer}>
                     {auth
@@ -38,14 +39,15 @@ const Header: React.FC<PropsType> = React.memo(({login, auth, userLogout}) => {
                                     Logout
                                 </Button>
                             </div>
-                        :   currentPagePath !== "/login" &&
+                        :
                         <NavLink to={"/login"} activeClassName={h.active}>
                                 <Button type={"default"}>
                                      Login
                                 </Button>
-                            </NavLink>}
+                            </NavLink>
+                    }
                 </div>
-            </div>
+            </div>}
         </header>
     )
 })

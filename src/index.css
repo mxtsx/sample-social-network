@@ -22,6 +22,33 @@ code {
   monospace;
 }
 
+@media (max-width:670px) {
+  #root {
+    top: 0;
+    left: 0;
+    position: fixed;
+    position: -webkit-sticky;
+    min-width: 100%;
+    width: max-content;
+    min-height: 100vh;
+    height: min-content;
+  }
+  #root:before {
+    content: " ";
+    position: absolute;
+    left:0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("https://source.unsplash.com/collection/3302492/1600x900");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(0.3rem);
+  }
+}
+
 @media (min-height: 100vh) {
   html, body {
     height: max-content !important;
