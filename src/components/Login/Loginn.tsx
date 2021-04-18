@@ -2,6 +2,7 @@ import {Redirect} from "react-router-dom";
 import LoginForm from "./LoginForm";
 import l from "./Login.module.css"
 import React from "react";
+import lf from "./LoginForm.module.css";
 
 type PropsType = MapStateToPropsType & MapDispatchToPropsType
 type MapStateToPropsType = {
@@ -30,7 +31,7 @@ const Login: React.FC<PropsType> = React.memo(({auth, userLogin, captchaURL}) =>
     return(
         <div className={l.loginContainer}>
             <div className={l.loginWrapper}>
-            <LoginForm captchaURL={captchaURL} onSubmit={onSubmit} />
+                <LoginForm captchaURL={captchaURL} onSubmit={onSubmit} />
             </div>
         </div>
     )

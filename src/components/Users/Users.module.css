@@ -3,12 +3,12 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttonContainer {
-    height: 95%;
+    height: 100%;
     width: 2rem;
     display: flex;
     flex-direction: row;
@@ -17,10 +17,10 @@
 
 .usersWrapper {
     height: 100%;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-start;
 }
 
@@ -88,8 +88,9 @@
 @media (max-width: 530px) {
     .container {
         height: 100%;
-        width: 100%;
-        justify-content: flex-start;
+        width: 90%;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     .searchForm form {

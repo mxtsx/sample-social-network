@@ -3,6 +3,7 @@
     width: 100%;
     grid-area: f;
     display: flex;
+    align-self: flex-end;
     flex-direction: column;
     justify-content: center;
     align-items: center;

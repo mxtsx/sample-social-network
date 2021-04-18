@@ -27,9 +27,11 @@ const Chat = React.memo(() => {
         }
     }, [])
     return(
-        <div className={c.chat}>
+        <div className={c.chatContainer}>
+            <div className={c.contentWrapper}>
             <AllMessages />
             <AddMessageForm />
+            </div>
         </div>
     )
 })

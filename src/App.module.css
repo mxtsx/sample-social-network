@@ -15,7 +15,7 @@
 }
 
 .main {
-  min-height: min-content;
+  min-height: max-content;
   justify-self: center;
   position: relative;
   width: 80%;
@@ -49,6 +49,8 @@ input, select, option, textarea {
 
 @media (max-width: 1000px) {
   .appContent {
+    min-width: 100%;
+    width: min-content;
     height: min-content;
     display: grid;
     grid-template-areas:
@@ -56,20 +58,22 @@ input, select, option, textarea {
   "s"
   "m"
   "f";
-    grid-template-rows: 70px 60px auto 60px;
+    grid-template-rows: 70px 60px minmax(80vh, min-content) 60px;
     grid-template-columns: 100%;
   }
   .main {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    width: 100%;
   }
 }
 
 @media (max-height: 426px) and (max-width: 880px) {
   .appContent {
-    grid-template-rows: 70px 40px auto 60px;
+    grid-template-rows: 70px 40px minmax(80vh, min-content) 60px;
+    grid-template-columns: 100%;
   }
 }
 
