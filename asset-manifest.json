@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/sample-social-network/static/css/main.5eca4867.chunk.css",
-    "main.js": "/sample-social-network/static/js/main.0e3ff5f2.chunk.js",
-    "main.js.map": "/sample-social-network/static/js/main.0e3ff5f2.chunk.js.map",
+    "main.css": "/sample-social-network/static/css/main.217398f2.chunk.css",
+    "main.js": "/sample-social-network/static/js/main.9f18ff0b.chunk.js",
+    "main.js.map": "/sample-social-network/static/js/main.9f18ff0b.chunk.js.map",
     "runtime-main.js": "/sample-social-network/static/js/runtime-main.02d44bb6.js",
     "runtime-main.js.map": "/sample-social-network/static/js/runtime-main.02d44bb6.js.map",
     "static/css/2.01e73eb3.chunk.css": "/sample-social-network/static/css/2.01e73eb3.chunk.css",
-    "static/js/2.3b75c608.chunk.js": "/sample-social-network/static/js/2.3b75c608.chunk.js",
-    "static/js/2.3b75c608.chunk.js.map": "/sample-social-network/static/js/2.3b75c608.chunk.js.map",
+    "static/js/2.2c91f044.chunk.js": "/sample-social-network/static/js/2.2c91f044.chunk.js",
+    "static/js/2.2c91f044.chunk.js.map": "/sample-social-network/static/js/2.2c91f044.chunk.js.map",
     "static/js/3.673e5bfd.chunk.js": "/sample-social-network/static/js/3.673e5bfd.chunk.js",
     "static/js/3.673e5bfd.chunk.js.map": "/sample-social-network/static/js/3.673e5bfd.chunk.js.map",
     "index.html": "/sample-social-network/index.html",
     "static/css/2.01e73eb3.chunk.css.map": "/sample-social-network/static/css/2.01e73eb3.chunk.css.map",
-    "static/css/main.5eca4867.chunk.css.map": "/sample-social-network/static/css/main.5eca4867.chunk.css.map",
-    "static/js/2.3b75c608.chunk.js.LICENSE.txt": "/sample-social-network/static/js/2.3b75c608.chunk.js.LICENSE.txt",
+    "static/css/main.217398f2.chunk.css.map": "/sample-social-network/static/css/main.217398f2.chunk.css.map",
+    "static/js/2.2c91f044.chunk.js.LICENSE.txt": "/sample-social-network/static/js/2.2c91f044.chunk.js.LICENSE.txt",
     "static/media/avatarMan.0940a2e8.svg": "/sample-social-network/static/media/avatarMan.0940a2e8.svg",
     "static/media/avatarWoman.98c0bda7.svg": "/sample-social-network/static/media/avatarWoman.98c0bda7.svg",
     "static/media/buttonDoubleLeft.6471537b.svg": "/sample-social-network/static/media/buttonDoubleLeft.6471537b.svg",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.02d44bb6.js",
     "static/css/2.01e73eb3.chunk.css",
-    "static/js/2.3b75c608.chunk.js",
-    "static/css/main.5eca4867.chunk.css",
-    "static/js/main.0e3ff5f2.chunk.js"
+    "static/js/2.2c91f044.chunk.js",
+    "static/css/main.217398f2.chunk.css",
+    "static/js/main.9f18ff0b.chunk.js"
   ]
 }
