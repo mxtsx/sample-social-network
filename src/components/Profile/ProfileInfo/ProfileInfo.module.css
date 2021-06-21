@@ -131,7 +131,6 @@
 
     .profileInfoContainer .photo {
         height: 100%;
-        flex-direction: column-reverse;
         padding-top: 0;
     }
 

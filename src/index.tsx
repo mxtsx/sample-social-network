@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import 'modern-normalize/modern-normalize.css';
 import reportWebVitals from './reportWebVitals';
 import SampleSocialNetworkApp from "./App";
 

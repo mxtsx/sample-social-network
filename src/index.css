@@ -1,21 +1,18 @@
-body {
-  min-height: 100vh;
-  min-width: 100vw;
+html, body {
   height: min-content !important;
+}
+
+body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-  url("https://source.unsplash.com/collection/3302492/1600x900");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  backdrop-filter: blur(0.2rem);
   text-shadow: 0 0.01rem 0.1rem rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 0 0.75rem rgba(0, 0, 0, 0.5);
+  overflow-y: auto !important;
+  overflow-x: hidden;
 }
 
 code {
@@ -23,42 +20,48 @@ code {
   monospace;
 }
 
-@media (max-width: 1000px) {
-  html, body {
-    min-height: min-content !important;
-  }
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+  url("https://source.unsplash.com/collection/3302492/1600x900");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  backdrop-filter: blur(0.3rem);
+  z-index: -1;
 }
 
 @media (max-width:670px) {
-  #root {
-    top: 0;
-    left: 0;
-    position: fixed;
-    position: -webkit-sticky;
-    min-width: 100%;
-    width: max-content;
-    min-height: 100vh;
-    height: min-content;
-    z-index: -1;
-  }
-  #root:after {
-    content: " ";
-    position: absolute;
-    left:0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -10;
+  body {
+    background-size: cover;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("https://source.unsplash.com/collection/3302492/1000x667");
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: blur(0.2rem);
+    background-attachment: initial;
+    /*background-attachment: fixed;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
+    backdrop-filter: blur(0.3rem);
   }
-}
-
-@media (min-width: 100vw) {
-  html, body {
-    width: max-content !important;
+  body::before {
+    display: none;
+  }
+  body::after {
+    display: none;
   }
 }
